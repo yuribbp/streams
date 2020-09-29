@@ -15,5 +15,8 @@ public class Program {
 		
 		Stream<String> st2 = Stream.of("Maria", "Alex", "Bob");
 		System.out.println(Arrays.toString(st2.toArray()));
+		
+		Stream<Integer> st3 = Stream.iterate(0, x -> x + 2);
+		System.out.println(Arrays.toString(st3.limit(10).toArray()));
 	}
 }
